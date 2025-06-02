@@ -1,0 +1,105 @@
+{
+  "about": {
+    "name": "Riya Chavan",
+    "tagline": "Final-Year B.Tech CSE (Data Science) | AI/ML Enthusiast | Building Real-World Intelligent Systems",
+    "location": "Mumbai, India",
+    "description": "I'm Riya Chavan, a Final Year B.Tech Computer Science (Data Science) student at DJ Sanghvi College of Engineering. I work at the intersection of AI, ML, and Full-Stack Engineering to build intelligent, scalable, and useful solutions."
+  },
+  "contact": {
+    "email": "riyaachavan08@gmail.com",
+    "github": "https://github.com/RiyaaChavan",
+    "linkedin": "https://linkedin.com/in/riya-chavan-471a4425b",
+    "resume": "https://drive.google.com/file/d/1fNgBiZOxLqKNHHmsY4l6iNcERE1_dAHS/view?usp=sharing"
+  },
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science (Data Science)",
+      "institution": "Dwarkadas J. Sanghvi College of Engineering, Mumbai",
+      "grade": "A",
+      "year": "2022 – Present"
+    }
+  ],
+  "internships": [
+    {
+      "role": "AI Intern",
+      "company": "VeeFly",
+      "duration": "April 2025 – Present",
+      "description": "Developing AI-powered tools for video summarization, smart tagging, content filtering, and automation of media workflows."
+    },
+    {
+      "role": "AI/ML Intern",
+      "company": "Tasklance",
+      "duration": "June 2024 – Oct 2024",
+      "description": "Developed a GenAI-based fashion recommendation system using LLama embeddings, AstraDB, and similarity search to personalize E-commerce discovery."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Biz AI",
+      "techStack": ["React", "OpenAI", "Langchain", "MongoDB", "Telegram Bot", "BM25", "Supabase"],
+      "description": "JIRA automation agent with CRM using BM25, and financial auditing system powered by LLMs for anomaly detection and compliance.",
+      "github": ""
+    },
+    {
+      "title": "Study Mate",
+      "techStack": ["Langchain", "OpenAI", "BERT", "RAG", "Supabase S3", "Next.js"],
+      "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning."
+    },
+    {
+      "title": "Verifi-Scope",
+      "techStack": ["Langchain", "Web Scraping", "Neo4j", "ElasticSearch", "Docker", "PostgreSQL"],
+      "description": "A misinformation detection platform with real-time fact checking using knowledge graphs and Telegram extensions."
+    },
+    {
+      "title": "Transaction Insights Pipeline",
+      "techStack": ["Kafka", "Apache Spark", "GCP BigQuery", "Grafana", "PostgreSQL"],
+      "description": "Real-time big data pipeline for transaction analytics and dashboarding."
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "Java", "C++"],
+    "ml_dl": ["TensorFlow", "Pandas", "Scikit-learn", "OpenCV", "Seaborn"],
+    "nlp": ["SpaCy", "NLTK", "LangChain", "Transformers", "OpenAI", "Gemini"],
+    "web": ["HTML", "CSS", "React", "Next.js", "Node.js", "Flask", "FastAPI", "Streamlit"],
+    "big_data": ["Kafka", "Spark", "Docker", "GCP", "Grafana"],
+    "databases": ["SQL", "MongoDB", "Cassandra", "AstraDB", "Neo4j"],
+    "tools": ["Tableau", "AutoCAD", "LangFlow", "BeautifulSoup"],
+    "soft_skills": ["Team Collaboration", "Effective Communication", "Leadership"]
+  },
+  "achievements": [
+    {
+      "title": "Winner - PEC Hacks 2.0",
+      "details": "Tamil Nadu's largest hackathon among 6000+ registrations, awarded Best AI Project by Databricks.",
+      "date": "December 2024"
+    },
+    {
+      "title": "3rd Place - Lines of Code 7.0",
+      "details": "24-hour ACM Hackathon with 200+ participants.",
+      "date": "February 2025"
+    },
+    {
+      "title": "Winner - Recursion 6.0",
+      "details": "Top winner out of 900+ participants at RGIT Hackathon.",
+      "date": "March 2025"
+    },
+    {
+      "title": "2nd Runner-Up - Code4AI",
+      "details": "GenAI Hackathon at RGIT.",
+      "date": "September 2024"
+    }
+  ],
+  "leadership": [
+    {
+      "role": "Vice-Chairperson",
+      "organization": "DJS-S4DS (Society for Data Science)",
+      "description": "Led nationwide AI/ML hackathons and workshops with 1300+ registrations, managing a 300+ member community.",
+      "duration": "June 2024 – Present"
+    },
+    {
+      "role": "Training and Placement Cell Co-ordinator",
+      "organization": "DJ Sanghvi College",
+      "description": "Actively facilitated student-industry interaction and placement preparation.",
+      "duration": "2024 – Present"
+    }
+  ]
+}
