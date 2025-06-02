@@ -5,6 +5,7 @@ import { Code, Github, ExternalLink, Sparkles, Zap, Brain, Database } from "luci
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { getTechIcon } from "@/lib/tech-icons"
 
 interface ProjectItem {
   title: string
@@ -112,14 +113,14 @@ export function ProjectsSection({ data }: ProjectsSectionProps) {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
-                  <div className={`grid grid-cols-1 ${index < 2 ? "lg:grid-cols-2" : "lg:grid-cols-3"} gap-0`}>
+                <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm max-w-3xl mx-auto">
+                  <div className="grid grid-cols-1 lg:grid-cols-4 gap-0">
                     {/* Project Visual/Icon Side */}
                     <div
-                      className={`${isEven ? "order-1" : "order-2 lg:order-1"} ${index < 2 ? "" : "lg:col-span-1"} relative overflow-hidden`}
+                      className={`${isEven ? "order-1" : "order-2 lg:order-1"} lg:col-span-1 relative overflow-hidden`}
                     >
                       <div
-                        className={`h-full min-h-[300px] bg-gradient-to-br ${colorClass} flex items-center justify-center relative`}
+                        className={`h-full min-h-[180px] bg-gradient-to-br ${colorClass} flex items-center justify-center relative`}
                       >
                         {/* Animated background pattern */}
                         <motion.div
@@ -138,39 +139,39 @@ export function ProjectsSection({ data }: ProjectsSectionProps) {
 
                         {/* Main icon */}
                         <motion.div
-                          whileHover={{ scale: 1.1, rotate: 10 }}
+                          whileHover={{ scale: 1.1, rotate: 5 }}
                           transition={{ duration: 0.3 }}
                           className="relative z-10"
                         >
-                          <IconComponent className="w-24 h-24 text-white drop-shadow-lg" />
+                          <IconComponent className="w-12 h-12 text-white drop-shadow-lg" />
                         </motion.div>
 
                         {/* Floating tech icons */}
                         <motion.div
-                          className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"
+                          className="absolute top-3 right-3 w-5 h-5 bg-white/20 rounded-full flex items-center justify-center"
                           animate={{ y: [0, -10, 0] }}
                           transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, delay: 1 }}
                         >
-                          <Sparkles className="w-4 h-4 text-white" />
+                          <Sparkles className="w-3 h-3 text-white" />
                         </motion.div>
 
                         <motion.div
-                          className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center"
+                          className="absolute bottom-4 left-4 w-5 h-5 bg-white/20 rounded-full flex items-center justify-center"
                           animate={{ rotate: [0, 360] }}
                           transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
                         >
-                          <Code className="w-3 h-3 text-white" />
+                          <Code className="w-2.5 h-2.5 text-white" />
                         </motion.div>
                       </div>
                     </div>
 
                     {/* Project Content Side */}
                     <div
-                      className={`${isEven ? "order-2" : "order-1 lg:order-2"} ${index < 2 ? "" : "lg:col-span-2"} p-8 flex flex-col justify-center`}
+                      className={`${isEven ? "order-2" : "order-1 lg:order-2"} lg:col-span-3 p-4 flex flex-col justify-center`}
                     >
-                      <CardHeader className="p-0 mb-6">
-                        <div className="flex items-center justify-between mb-4">
-                          <CardTitle className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-violet-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
+                      <CardHeader className="p-0 mb-3">
+                        <div className="flex items-center justify-between mb-2">
+                          <CardTitle className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-violet-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
                             {project.title}
                           </CardTitle>
 
@@ -198,49 +199,53 @@ export function ProjectsSection({ data }: ProjectsSectionProps) {
                         </div>
                       </CardHeader>
 
-                      <CardContent className="p-0 space-y-6">
-                        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <CardContent className="p-0 space-y-4">
+                        <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                           {project.description}
                         </p>
 
                         {/* Tech Stack with Creative Layout */}
                         <div>
-                          <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3 uppercase tracking-wider">
+                          <h4 className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">
                             Technology Stack
                           </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {project.techStack.map((tech, techIndex) => (
-                              <motion.div
-                                key={techIndex}
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.3, delay: techIndex * 0.05 }}
-                                viewport={{ once: true }}
-                                whileHover={{ scale: 1.05 }}
-                              >
-                                <Badge
-                                  variant="secondary"
-                                  className={`px-3 py-1 bg-gradient-to-r ${colorClass} text-white hover:shadow-lg transition-all duration-200 font-medium`}
+                          <div className="flex flex-wrap gap-1.5">
+                            {project.techStack.map((tech, techIndex) => {
+                              const TechIcon = getTechIcon(tech);
+                              return (
+                                <motion.div
+                                  key={techIndex}
+                                  initial={{ opacity: 0, scale: 0.8 }}
+                                  whileInView={{ opacity: 1, scale: 1 }}
+                                  transition={{ duration: 0.3, delay: techIndex * 0.05 }}
+                                  viewport={{ once: true }}
+                                  whileHover={{ scale: 1.05 }}
                                 >
-                                  {tech}
-                                </Badge>
-                              </motion.div>
-                            ))}
+                                  <Badge
+                                    variant="secondary"
+                                    className={`px-2 py-0.5 text-xs bg-gradient-to-r ${colorClass} text-white hover:shadow-lg transition-all duration-200 font-medium flex items-center gap-1`}
+                                  >
+                                    <TechIcon className="w-3 h-3" />
+                                    <span>{tech}</span>
+                                  </Badge>
+                                </motion.div>
+                              );
+                            })}
                           </div>
                         </div>
 
                         {/* Project Stats/Features */}
-                        <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <div className="grid grid-cols-3 gap-2 pt-3 border-t border-gray-200 dark:border-gray-700">
                           <div className="text-center">
-                            <div className="text-2xl font-bold holographic">AI</div>
+                            <div className="text-lg font-bold holographic">AI</div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">Powered</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-2xl font-bold holographic">Full</div>
+                            <div className="text-lg font-bold holographic">Full</div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">Stack</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-2xl font-bold holographic">Open</div>
+                            <div className="text-lg font-bold holographic">Open</div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">Source</div>
                           </div>
                         </div>

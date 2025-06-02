@@ -5,6 +5,7 @@ import { Code, Database, Brain, Globe, Wrench, Users, Zap, Cpu } from "lucide-re
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
+import { getTechIcon } from "@/lib/tech-icons"
 
 interface SkillsData {
   languages: string[]
@@ -160,7 +161,7 @@ export function SkillsSection({ data }: SkillsSectionProps) {
                 <Card
                   className={`h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden card-3d bg-gradient-to-br ${category.bgColor} backdrop-blur-sm`}
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="p-4">
                     {/* Header */}
                     <div className="flex items-center space-x-3 mb-4">
                       <motion.div
@@ -180,26 +181,32 @@ export function SkillsSection({ data }: SkillsSectionProps) {
 
                     {/* Skills */}
                     <div className="space-y-2">
-                      {skills.slice(0, hoveredCategory === category.id ? skills.length : 4).map((skill, skillIndex) => (
-                        <motion.div
-                          key={skillIndex}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
-                        >
-                          <Badge
-                            variant="secondary"
-                            className={`w-full justify-center py-2 px-3 bg-gradient-to-r ${category.color} text-white hover:scale-105 transition-all duration-200 shadow-md text-xs font-medium`}
-                          >
-                            {skill}
-                          </Badge>
-                        </motion.div>
-                      ))}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                        {skills.slice(0, hoveredCategory === category.id ? skills.length : 6).map((skill, skillIndex) => {
+                          const TechIcon = getTechIcon(skill);
+                          return (
+                            <motion.div
+                              key={skillIndex}
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
+                              className="text-center"
+                            >
+                              <div 
+                                className={`flex flex-col items-center justify-center p-2 rounded-lg bg-gradient-to-br ${category.color} bg-opacity-10 hover:bg-opacity-20 text-gray-800 dark:text-gray-200 hover:scale-105 transition-all duration-200 shadow-sm h-full`}
+                              >
+                                <TechIcon className="w-6 h-6 mb-1" />
+                                <p className="text-xs font-medium truncate w-full text-center">{skill}</p>
+                              </div>
+                            </motion.div>
+                          );
+                        })}
+                      </div>
 
-                      {skills.length > 4 && hoveredCategory !== category.id && (
-                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
+                      {skills.length > 6 && hoveredCategory !== category.id && (
+                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-2">
                           <Badge variant="outline" className="text-xs text-gray-500 dark:text-gray-400">
-                            +{skills.length - 4} more
+                            +{skills.length - 6} more
                           </Badge>
                         </motion.div>
                       )}

@@ -9,7 +9,7 @@
     "email": "riyaachavan08@gmail.com",
     "github": "https://github.com/RiyaaChavan",
     "linkedin": "https://linkedin.com/in/riya-chavan-471a4425b",
-    "resume": "https://drive.google.com/file/d/1fNgBiZOxLqKNHHmsY4l6iNcERE1_dAHS/view?usp=sharing"
+    "resume": "https://drive.google.com/drive/folders/1IH0mb2zblgAfzsj1a8bBv3CEr0sYy97R?usp=drive_link"
   },
   "education": [
     {
@@ -35,15 +35,16 @@
   ],
   "projects": [
     {
-      "title": "Biz AI",
-      "techStack": ["React", "OpenAI", "Langchain", "MongoDB", "Telegram Bot", "BM25", "Supabase"],
-      "description": "JIRA automation agent with CRM using BM25, and financial auditing system powered by LLMs for anomaly detection and compliance.",
-      "github": ""
+      "title": "AskAsha",
+      "techStack": ["Flask", "React", "Node.js", "Firebase", "MongoDB", "OpenAI", "Cohere LLM", "Claude", "Gemini", "Langchain"],
+      "description": "An AI-powered career assistant for women that provides personalized coaching, real-time job scraping, and integration of various AI features like bias detection and voice assistance.",
+      "github": "https://github.com/RiyaaChavan/AskAsha"
     },
     {
-      "title": "Study Mate",
-      "techStack": ["Langchain", "OpenAI", "BERT", "RAG", "Supabase S3", "Next.js"],
-      "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning."
+      "title": "CLARITY",
+      "techStack": ["PyTorch", "Contrastive Learning", "cGANs", "CrossModal Attention"],
+      "description": "A cross-modal learning system that achieves 98.2% polymer classification accuracy by integrating FTIR and Raman spectroscopy through contrastive architecture and conditional GAN-based data augmentation.",
+      "github": "https://github.com/RiyaaChavan/CLARITY"
     },
     {
       "title": "Verifi-Scope",
@@ -51,9 +52,9 @@
       "description": "A misinformation detection platform with real-time fact checking using knowledge graphs and Telegram extensions."
     },
     {
-      "title": "Transaction Insights Pipeline",
-      "techStack": ["Kafka", "Apache Spark", "GCP BigQuery", "Grafana", "PostgreSQL"],
-      "description": "Real-time big data pipeline for transaction analytics and dashboarding."
+      "title": "Study Mate",
+      "techStack": ["Langchain", "OpenAI", "BERT", "RAG", "Supabase S3", "Next.js"],
+      "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning."
     }
   ],
   "skills": {
@@ -68,13 +69,18 @@
   },
   "achievements": [
     {
+      "title": "Asha AI Hackathon Winner",
+      "details": "1st position among 2000+ team submissions at national-level, organized by JobsForHer Foundation, HerKey Company & Hack2Skill",
+      "date": "April 2025"
+    },
+    {
       "title": "Winner - PEC Hacks 2.0",
       "details": "Tamil Nadu's largest hackathon among 6000+ registrations, awarded Best AI Project by Databricks.",
       "date": "December 2024"
     },
     {
       "title": "3rd Place - Lines of Code 7.0",
-      "details": "24-hour ACM Hackathon with 200+ participants.",
+      "details": "Hosted by Association for Computing Machinery (ACM)",
       "date": "February 2025"
     },
     {
@@ -98,8 +104,8 @@
     {
       "role": "Training and Placement Cell Co-ordinator",
       "organization": "DJ Sanghvi College",
-      "description": "Actively facilitated student-industry interaction and placement preparation.",
-      "duration": "2024 – Present"
+      "description": "Spearheaded and maintained strong relationships with industry partners to facilitate internships, campus recruitments, and live projects aligned with student career goals.",
+      "duration": " – Present"
     }
   ]
 }

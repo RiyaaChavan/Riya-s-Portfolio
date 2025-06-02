@@ -17,9 +17,9 @@ export default function Portfolio() {
         <HeroSection data={portfolioData.about} contact={portfolioData.contact} />
         <EducationSection data={portfolioData.education} />
         <ExperienceSection data={portfolioData.internships} />
+        <AchievementsSection data={portfolioData.achievements} />
         <ProjectsSection data={portfolioData.projects} />
         <SkillsSection data={portfolioData.skills} />
-        <AchievementsSection data={portfolioData.achievements} />
         <LeadershipSection data={portfolioData.leadership} />
         <ContactSection data={portfolioData.contact} />
       </main>
