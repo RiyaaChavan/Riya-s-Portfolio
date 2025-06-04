@@ -12,6 +12,7 @@ interface ProjectItem {
   techStack: string[]
   description: string
   github?: string
+  website?: string
 }
 
 interface ProjectsSectionProps {
@@ -188,13 +189,27 @@ export function ProjectsSection({ data }: ProjectsSectionProps) {
                                 </a>
                               </Button>
                             )}
-                            <Button
-                              variant="ghost"
-                              size="icon"
-                              className="hover:bg-violet-100 dark:hover:bg-violet-900/20"
-                            >
-                              <ExternalLink className="w-5 h-5" />
-                            </Button>
+                            {project.website ? (
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="hover:bg-violet-100 dark:hover:bg-violet-900/20"
+                                asChild
+                              >
+                                <a href={project.website} target="_blank" rel="noopener noreferrer">
+                                  <ExternalLink className="w-5 h-5" />
+                                </a>
+                              </Button>
+                            ) : (
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="hover:bg-violet-100 dark:hover:bg-violet-900/20 opacity-50"
+                                disabled
+                              >
+                                <ExternalLink className="w-5 h-5" />
+                              </Button>
+                            )}
                           </div>
                         </div>
                       </CardHeader>

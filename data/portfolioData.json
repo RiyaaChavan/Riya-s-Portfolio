@@ -39,28 +39,28 @@
       "techStack": ["Flask", "React", "Node.js", "Firebase", "MongoDB", "OpenAI", "Cohere LLM", "Claude", "Gemini", "Langchain"],
       "description": "An AI-powered career assistant for women that provides personalized coaching, real-time job scraping, and integration of various AI features like bias detection and voice assistance.",
       "github": "https://github.com/RiyaaChavan/AskAsha_Heuristics",
-      "website":"https://askashabot.vercel.app/"
+      "website": "https://askashabot.vercel.app/"
     },
     {
       "title": "CLARITY",
       "techStack": ["PyTorch", "Contrastive Learning", "cGANs", "CrossModal Attention"],
       "description": "A cross-modal learning system that achieves 98.2% polymer classification accuracy by integrating FTIR and Raman spectroscopy through contrastive architecture and conditional GAN-based data augmentation.",
       "github": "https://github.com/RiyaaChavan/CLARITY",
-      "website":"https://microplasticswebsite.vercel.app/"
+      "website": "https://microplasticswebsite.vercel.app/"
     },
     {
       "title": "Verifi-Scope",
       "techStack": ["Langchain", "Web Scraping", "Neo4j", "ElasticSearch", "Docker", "PostgreSQL"],
       "description": "A misinformation detection platform with real-time fact checking using LLMs, knowledge graphs and Website extensions.",
-      "github":"https://github.com/RiyaaChavan/Ms.Info-VerifiScope",
-      "website":"https://drive.google.com/file/d/1hq3arjys1dWECZk7_N8PWyd7Fk2cv9rl/view"
+      "github": "https://github.com/RiyaaChavan/Ms.Info-VerifiScope",
+      "website": "https://drive.google.com/file/d/1hq3arjys1dWECZk7_N8PWyd7Fk2cv9rl/view"
     },
     {
       "title": "Study Mate",
       "techStack": ["Langchain", "OpenAI", "BERT", "RAG", "Supabase S3", "Next.js"],
       "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning.",
       "github": "https://github.com/RiyaaChavan/YourStudyMate",
-      "website":"https://drive.google.com/file/d/1fNgBiZOxLqKNHHmsY4l6iNcERE1_dAHS/view"
+      "website": "https://drive.google.com/file/d/1fNgBiZOxLqKNHHmsY4l6iNcERE1_dAHS/view"
     }
   ],
   
