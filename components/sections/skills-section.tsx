@@ -230,44 +230,7 @@ export function SkillsSection({ data }: SkillsSectionProps) {
           })}
         </div>
 
-        {/* Skills Summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <Card className="glass border-0 shadow-xl max-w-4xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 holographic">Technical Expertise Overview</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {skillCategories.map((category, index) => {
-                  const skills = data[category.id as keyof SkillsData] || []
-                  return (
-                    <motion.div
-                      key={category.id}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="text-center"
-                    >
-                      <div
-                        className={`w-16 h-16 mx-auto mb-3 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center shadow-lg`}
-                      >
-                        <span className="text-2xl font-bold text-white">{skills.length}</span>
-                      </div>
-                      <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                        {category.label.split(" ")[0]}
-                      </p>
-                    </motion.div>
-                  )
-                })}
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+        {/* Technical Expertise Overview section removed */}
       </div>
     </section>
   )

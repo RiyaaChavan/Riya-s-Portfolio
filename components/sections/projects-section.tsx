@@ -275,9 +275,12 @@ export function ProjectsSection({ data }: ProjectsSectionProps) {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
               >
-                <Github className="w-5 h-5 mr-2" />
-                View All Projects
+                <a href="https://github.com/RiyaaChavan" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5 mr-2" />
+                  View All Projects
+                </a>
               </Button>
             </CardContent>
           </Card>

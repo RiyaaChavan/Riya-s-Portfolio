@@ -24,13 +24,13 @@
       "role": "AI Intern",
       "company": "VeeFly",
       "duration": "April 2025 – Present",
-      "description": "Developing AI-powered tools for video summarization, smart tagging, content filtering, and automation of media workflows."
+      "description": "Built an AI-driven pipeline that transforms long-form videos into short, engaging clips using OpenAI Whisper for speech understanding and Generative AI for content summarization. Integrated AI agents via LLMs and Autogen to automate tasks like scene detection, smart tagging, content filtering, and media workflow orchestration. Leveraged Amazon S3 for scalable storage."
     },
     {
       "role": "AI/ML Intern",
       "company": "Tasklance",
       "duration": "June 2024 – Oct 2024",
-      "description": "Developed a GenAI-based fashion recommendation system using LLama embeddings, AstraDB, and similarity search to personalize E-commerce discovery."
+      "description": "Built a GenAI-powered fashion recommendation and visual search system for an e-commerce platform. Utilized pre-trained LLaMA models to generate multimodal embeddings from product and human images. Stored high-dimensional vectors in AstraDB (Cassandra-based vector DB) and implemented real-time similarity search to retrieve and rank visually and semantically relevant items, boosting search relevance, personalization, and user engagement."
     }
   ],
   "projects": [
@@ -38,25 +38,32 @@
       "title": "AskAsha",
       "techStack": ["Flask", "React", "Node.js", "Firebase", "MongoDB", "OpenAI", "Cohere LLM", "Claude", "Gemini", "Langchain"],
       "description": "An AI-powered career assistant for women that provides personalized coaching, real-time job scraping, and integration of various AI features like bias detection and voice assistance.",
-      "github": "https://github.com/RiyaaChavan/AskAsha"
+      "github": "https://github.com/RiyaaChavan/AskAsha_Heuristics",
+      "website":"https://askashabot.vercel.app/"
     },
     {
       "title": "CLARITY",
       "techStack": ["PyTorch", "Contrastive Learning", "cGANs", "CrossModal Attention"],
       "description": "A cross-modal learning system that achieves 98.2% polymer classification accuracy by integrating FTIR and Raman spectroscopy through contrastive architecture and conditional GAN-based data augmentation.",
-      "github": "https://github.com/RiyaaChavan/CLARITY"
+      "github": "https://github.com/RiyaaChavan/CLARITY",
+      "website":"https://microplasticswebsite.vercel.app/"
     },
     {
       "title": "Verifi-Scope",
       "techStack": ["Langchain", "Web Scraping", "Neo4j", "ElasticSearch", "Docker", "PostgreSQL"],
-      "description": "A misinformation detection platform with real-time fact checking using knowledge graphs and Telegram extensions."
+      "description": "A misinformation detection platform with real-time fact checking using LLMs, knowledge graphs and Website extensions.",
+      "github":"https://github.com/RiyaaChavan/Ms.Info-VerifiScope",
+      "website":"https://drive.google.com/file/d/1hq3arjys1dWECZk7_N8PWyd7Fk2cv9rl/view"
     },
     {
       "title": "Study Mate",
       "techStack": ["Langchain", "OpenAI", "BERT", "RAG", "Supabase S3", "Next.js"],
-      "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning."
+      "description": "An AI-powered academic assistant automating document management, assignment creation, and study planning.",
+      "github": "https://github.com/RiyaaChavan/YourStudyMate",
+      "website":"https://drive.google.com/file/d/1fNgBiZOxLqKNHHmsY4l6iNcERE1_dAHS/view"
     }
   ],
+  
   "skills": {
     "languages": ["Python", "Java", "C++"],
     "ml_dl": ["TensorFlow", "Pandas", "Scikit-learn", "OpenCV", "Seaborn"],
@@ -98,13 +105,13 @@
     {
       "role": "Vice-Chairperson",
       "organization": "DJS-S4DS (Society for Data Science)",
-      "description": "Led nationwide AI/ML hackathons and workshops with 1300+ registrations, managing a 300+ member community.",
+      "description": "Led a 300+ member AI/ML community, organizing national hackathons like Datahack and Xtract with 1300+ and hands-on bootcamps in ML, Flask, and Git. Focused on team collaboration, strategic planning, and peer-driven learning to foster innovation and technical growth.",
       "duration": "June 2024 – Present"
     },
     {
       "role": "Training and Placement Cell Co-ordinator",
       "organization": "DJ Sanghvi College",
-      "description": "Spearheaded and maintained strong relationships with industry partners to facilitate internships, campus recruitments, and live projects aligned with student career goals.",
+      "description": "Spearheaded and nurtured strategic relationships with industry partners to drive impactful collaborations, including internships, campus recruitment drives, and live project opportunities. Actively aligned these initiatives with student career goals, bridging the gap between academic learning and real-world industry exposure.",
       "duration": " – Present"
     }
   ]

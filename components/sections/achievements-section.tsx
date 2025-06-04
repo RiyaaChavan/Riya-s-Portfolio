@@ -226,46 +226,7 @@ export function AchievementsSection({ data }: AchievementsSectionProps) {
           })}
         </div>
 
-        {/* Achievement Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <Card className="glass border-0 shadow-xl max-w-4xl mx-auto overflow-hidden">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-8 holographic">Achievement Highlights</h3>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <motion.div whileHover={{ scale: 1.05 }} className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
-                    <Trophy className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="text-3xl font-bold holographic mb-2">{data.length}</div>
-                  <p className="text-gray-600 dark:text-gray-400">Total Awards</p>
-                </motion.div>
-
-                <motion.div whileHover={{ scale: 1.05 }} className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Zap className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="text-3xl font-bold holographic mb-2">6000+</div>
-                  <p className="text-gray-600 dark:text-gray-400">Participants Competed</p>
-                </motion.div>
-
-                <motion.div whileHover={{ scale: 1.05 }} className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Star className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="text-3xl font-bold holographic mb-2">2</div>
-                  <p className="text-gray-600 dark:text-gray-400">First Place Wins</p>
-                </motion.div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+        {/* Achievement Stats section removed */}
       </div>
     </section>
   )
